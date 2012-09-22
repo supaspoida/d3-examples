@@ -2,8 +2,8 @@
 
 %dl
   - example_groups.each do |type, examples|
-    %dt= type.humanize
+    %dt= type.titleize
     %dd
       %ul
         = list_of examples do |example|
-          = link_to example.name.humanize, example.path
+          = link_to example.name.titleize, example.path

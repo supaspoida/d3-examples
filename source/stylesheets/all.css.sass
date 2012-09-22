@@ -5,7 +5,7 @@ body
   font-family: sans-serif
 
 a
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.5)
   text-decoration: none
   &:hover
     color: #666
@@ -18,5 +18,34 @@ h1
   text-align: center
   text-transform: uppercase
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
-  padding: 20px 0 10px
+  padding: 20px 0
   margin: 0
+
+dl
+  width: 960px
+  margin: 0 auto
+  text-align: center
+
+dt
+  font-weight: bold
+  font-size: 22px
+
+dd
+  margin: 0
+
+ul
+  list-style-type: none
+  overflow: auto
+  padding: 0
+
+li
+  display: inline
+
+  &:after
+    content: "●"
+    opacity: .2
+    padding: 0 2px 0 6px
+
+  &:last-child:after
+    content: ""
+    padding: 0
