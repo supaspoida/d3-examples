@@ -41,11 +41,14 @@
 # activate :automatic_image_sizes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+require 'lib/group_examples'
+
+helpers do
+  def example_groups
+    files = Dir.glob 'source/examples/**/*.html'
+    GroupExamples[files]
+  end
+end
 
 set :css_dir, 'stylesheets'
 
