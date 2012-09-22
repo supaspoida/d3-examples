@@ -5,5 +5,5 @@
     %dt= type.titleize
     %dd
       %ul
-        = list_of examples do |example|
+        = list_of examples.sort_by(&:name) do |example|
           = link_to example.name.titleize, example.path
