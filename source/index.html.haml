@@ -1,0 +1,9 @@
+%h1 d3 Examples
+
+%dl
+  - example_groups.each do |type, examples|
+    %dt= type.humanize
+    %dd
+      %ul
+        = list_of examples do |example|
+          = link_to example.name.humanize, example.path
