@@ -1,7 +1,7 @@
 %h1 d3 Examples
 
 %dl
-  - example_groups.each do |type, examples|
+  - example_groups.sort.each do |type, examples|
     %dt= type.titleize
     %dd
       %ul
